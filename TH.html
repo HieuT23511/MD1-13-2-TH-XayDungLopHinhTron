@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuc hanh Xay dung lop Hinh tron</title>
+</head>
+<body>
+<script>
+    class circle{
+        radius;
+        color;
+        constructor(radius, color) {
+            this.radius = radius;
+            this.color = color;
+        }
+        getRadius(){
+            return this.radius
+        };
+        getArea(){
+            let Area = Math.PI* this.radius *this.radius
+            return Area
+        };
+
+        setRadius(radius){
+            this.radius = radius;
+        }
+    }
+    inputCircle = new circle(2,'blue');
+    inputCircle.getRadius();
+    inputCircle.getArea();
+    inputCircle.setRadius(10);
+    document.write(`The Area of circle (radius = ${inputCircle.getRadius()}) is ${inputCircle.getArea()} `)
+
+</script>
+</body>
+</html>
